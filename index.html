@@ -82,7 +82,7 @@
       transform: translateY(-50%);
       font: 400 0.85rem helvetica, sans-serif;
       color: white;
-      background: rgba(0, 0, 0, 0.2);
+      background: rgba(0, 0, 0, 0.5);
       border-radius: 5px;
       padding: 10px;
       text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
@@ -232,44 +232,38 @@
 <body>
   <main>
     <ul class='slider'>
-      <li class='item' style="background-image: url('https://imgur.com/RjbJE3e.jpg')">
+      <li class='item' style="background-image: url('https://imgur.com/0mynMib.jpg')">
         <div class='content'>
-          <h2 class='title'>"You are cute .."</h2>
+          <h2 class='title'>"Forever us!" 💑"</h2>
           <p class='description'>
-            "If you were a cat, you'd purr-fectly steal my heart.
+            "No matter where life takes us, one thing is certain—I want to spend every moment with you. Together, we can face anything."
           </p>
-          <button>Read More</button>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://imgur.com/XLHdPAw.jpg')">
+      <li class='item' style="background-image: url('https://imgur.com/5cBu9gk.jpg')">
         <div class='content'>
-          <h2 class='title'>Your Amazing...</h2>
-          <p class='description'> I was thinking about you today and couldn't help but smile. Your presence has a way of
-            making everything better. </p>
-          <button>Read More</button>
+          <h2 class='title'>Endless love!" 🌹💫</h2>
+          <p class='description'> "My love for you knows no limits. With every heartbeat, I fall for you all over again." </p>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://imgur.com/qvAdu0Z.jpg')">
+      <li class='item' style="background-image: url('https://imgur.com/HG1CYhB.jpg')">
         <div class='content'>
-          <h2 class='title'>"When i Lost I find You.."</h2>
+          <h2 class='title'>"When I see you I start smiling✨❤️"</h2>
           <p class='description'>
-            "Do you have a map? Because I just keep getting lost in your eyes every time I see you. 🌟"
+            "They say laughter is the best medicine. So, would you like to be my daily dose of happiness?😍"
           </p>
-          <button>Read More</button>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://imgur.com/Edrj1oW.jpg')">
+      <li class='item' style="background-image: url('https://imgur.com/kmxQLfp.jpg')">
         <div class='content'>
-          <h2 class='title'>"You are Magical"</h2>
-          <p class='description'> "Are you a magician? Because whenever I look at you, everyone else disappears. ✨"</p>
-          <button>Read More</button>
+          <h2 class='title'>"You are Adorable 🏡💕"</h2>
+          <p class='description'> "I've been saving up my hugs and kisses for a special occasion. Looks like now might be the perfect time to cash in. ✨"</p>
         </div>
       </li>
-      <li class='item' style="background-image: url('https://imgur.com/EjAlbnm.jpg')">
+      <li class='item' style="background-image: url('https://imgur.com/0EbUujO.jpg')">
         <div class='content'>
-          <h2 class='title'>"You are Always in my mind"</h2>
-          <p class='description'> "You're like a fine wine – you get better with time. 😍 </p>
-          <button>Read More</button>
+          <h2 class='title'>"With you, always!" 👫💞"</h2>
+          <p class='description'> "No matter how far or close, my heart belongs to you, today and always.😍" </p>
         </div>
       </li>
       <!-- <li class='item' style="background-image: url('https://cgfrog.com/wp-content/uploads/2015/02/Promise-Day-Wallpapers-for-Mobile-Desktop15.jpg')">
@@ -278,7 +272,6 @@
               <p class='description'>
                 "Do you have a map? Because I just keep getting lost in your eyes every time I see you. 🌟"
               </p>
-              <button>Read More</button>
             </div>
           </li>
           <li class='item' style="background-image: url('https://karnatakastateopenuniversity.in/wp-content/uploads/2022/02/hug-day-whatsapp-status.jpg')">
@@ -287,7 +280,6 @@
               <p class='description'>
                 "Do you have a map? Because I just keep getting lost in your eyes every time I see you. 🌟"
               </p>
-              <button>Read More</button>
             </div>
           </li>
           <li class='item' style="background-image: url('https://i.pinimg.com/736x/a4/04/f7/a404f72808d3b2b7154af1f4eea64e6e.jpg')">
@@ -296,7 +288,6 @@
               <p class='description'>
                 "Do you have a map? Because I just keep getting lost in your eyes every time I see you. 🌟"
               </p>
-              <button>Read More</button>
             </div>
           </li> -->
 
@@ -318,7 +309,8 @@
     function activate(e) {
       const items = document.querySelectorAll('.item');
       e.target.matches('.next') && slider.append(items[0]);
-      e.target.matches('.prev') && slider.append(items[items.ngth - 1]);
+      e.target.matches('.prev') && slider.append(items[items.length - 1]);
+      
     }
     document.addEventListener('click', activate, false);
   </script>
